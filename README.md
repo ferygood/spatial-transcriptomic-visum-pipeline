@@ -8,4 +8,4 @@ This project use 10X Visuim spatial transcriptomic data, combing AI image featur
 ### 1. QC & Feature Selection
 I first filter low quality spots by filting 2000 high variable genes (HVGs)
 
-![image]("results/qc_metrics.png")
+![image](results/qc_metrics.png)
