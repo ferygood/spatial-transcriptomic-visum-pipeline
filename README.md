@@ -1,3 +1,5 @@
+[![Python Version](https://img.shields.io/pypi/pyversions/squidpy)](https://pypi.org/project/squidpy/)
+
 # spatial-transcriptomic-visum-pipeline
 A multimodal pipeline for integrating spatial transcriptomics and computer vision using Scanpy and Squidpy.
 
@@ -5,6 +7,15 @@ A multimodal pipeline for integrating spatial transcriptomics and computer visio
 This project utilizes 10X Visium spatial transcriptomic data from the [V1 Adult Mouse Brain dataset](https://squidpy.readthedocs.io/en/stable/api.html#module-squidpy.datasets). The pipeline implements a multimodal approach, combining AI-driven image feature extraction with statistical genomics to characterize anatomical regions of the mouse brain.  
 
 ## Technical Pipeline
+###  Project Structure
+├── data/               # Raw and processed .h5ad files
+├── results/            # Generated figures (PNG/PDF)
+├── scripts/            # Python scripts for data automation
+│   └── download_data.py
+├── notebooks/          # Analysis workflow (Jupyter Notebooks)
+├── requirements.txt    # Dependency list
+└── README.md
+
 ### 1. QC & Feature Selection
 To ensure data quality, spots were filtered to include only those with at least 500 genes, and genes were retained only if expressed in at least 10 spots.
 
